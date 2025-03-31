@@ -1,89 +1,54 @@
-# Task Tracker CLI
+# Task Tracker CLI  
 
-Task Tracker CLI is a simple command-line tool for tracking and managing tasks. It allows users to add, update, delete, and manage task statuses efficiently using a JSON-based storage system.
+Task Tracker is a simple Command Line Interface (CLI) application for tracking and managing your tasks. This application allows you to add, update, delete, and set task statuses easily using terminal commands.  
 
-## Project URL
-[GitHub Repository](https://github.com/muhammadkusuma/task-tracker-cli)
+## 📌 Features  
 
-## Features
-- Add new tasks
-- Update task descriptions
-- Delete tasks
-- Mark tasks as in progress or done
-- List all tasks or filter by status
-- JSON-based storage for persistence
+- Add new tasks  
+- Update task descriptions  
+- Delete tasks  
+- Mark tasks as "in progress" or "done"  
+- List all tasks  
+- List tasks by status (todo, in-progress, done)  
 
-## Installation
-Clone this repository and navigate into the directory:
+## 🚀 How to Use  
 
-```sh
-git clone https://github.com/muhammadkusuma/task-tracker-cli.git
-cd task-tracker-cli
+Make sure you have Python installed on your system. Then, run the following commands:  
+
+### Add a New Task  
+```powershell
+python script.py add "Buy vegetables at the market"
 ```
 
-Ensure you have Python installed, then run:
-
-```sh
-python script.py
-```
-
-## Usage
-Run the following commands to interact with the Task Tracker CLI:
-
-### Add a Task
-```sh
-python script.py add "Buy groceries"
-```
-
-### Update a Task
-```sh
-python script.py update 1 "Buy groceries and cook dinner"
-```
-
-### Delete a Task
-```sh
-python script.py delete 1
-```
-
-### Mark a Task as In Progress
-```sh
-python script.py mark-in-progress 1
-```
-
-### Mark a Task as Done
-```sh
-python script.py mark-done 1
-```
-
-### List All Tasks
-```sh
+### List All Tasks  
+```powershell
 python script.py list
 ```
 
-### List Tasks by Status
-```sh
-python script.py list done
-python script.py list todo
-python script.py list in-progress
+### Mark a Task as In Progress  
+```powershell
+python script.py mark-in-progress 1
 ```
 
-## File Storage
-Tasks are stored in `tasks.json` in the same directory as `script.py`. The JSON file structure follows:
-```json
-[
-  {
-    "id": 1,
-    "description": "Buy groceries",
-    "status": "todo",
-    "createdAt": "2025-03-31T12:00:00",
-    "updatedAt": "2025-03-31T12:00:00"
-  }
-]
+### Mark a Task as Done  
+```powershell
+python script.py mark-done 1
 ```
 
-## Contributing
-Feel free to fork this repository and submit pull requests for improvements.
+### Update Task Description  
+```powershell
+python script.py update 1 "Buy vegetables and fruits at the market"
+```
 
-## License
-This project is licensed under the MIT License.
+### Delete a Task  
+```powershell
+python script.py delete 1
+```
+
+## 📂 Data Storage  
+All tasks are automatically saved in the `tasks.json` file, ensuring that your tasks persist even after exiting the program.  
+
+## 🔗 Project URL  
+GitHub Repository: [GitHub repository](https://github.com/muhammadkusuma/task-tracker-cli)  
+Roadmap: [Task Tracker Project Roadmap](https://roadmap.sh/projects/task-tracker)  
 
